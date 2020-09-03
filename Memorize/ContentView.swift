@@ -5,6 +5,7 @@
 //  Created by Rob Ranf on 6/16/20.
 //  Copyright © 2020 Rob Ranf. All rights reserved.
 //
+// This is the View in MVVM
 
 import SwiftUI
 
