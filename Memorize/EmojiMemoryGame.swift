@@ -17,8 +17,11 @@ import SwiftUI
 //  So only EmojiMemoryGame can modify the Model but everything else can see the Model
 //  Instead we're creating a var named cards that returns our gameModel cards in order to access the Model
 
+/// Provides access to the game model as well as player / card functionality.
 class EmojiMemoryGame {
-    private var _gameModel: MemoryGame<String>
+    private var _gameModel: MemoryGame<String> = MemoryGame<String>(numberOfPairsOfCards: 2, cardContentFactory: {(pairIndex: Int) -> String in
+        return "😆"
+        })
     
     // MARK: - Access to the Model
     
